@@ -18,5 +18,20 @@ def server_pages(path):
     return render_template(f'{path}.html')  # noqa
 
 
+@app.route('/login')
+def login():
+    return render_template('index.html')
+
+
+@app.route('/register')
+def register():
+    return render_template('index.html')
+
+
+@app.route('/logout')
+def logout():
+    return render_template('index.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
