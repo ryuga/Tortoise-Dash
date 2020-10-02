@@ -32,27 +32,32 @@
 
                     <form role="form" method="post" action="">
 
-                        {% csrf_token %}                    
+{#                        {% csrf_token %}                    #}
 
                         <div class="input-group mb-3">
-                            {{ form.username }}
+{#                            {{ form.username }}#}
+                            <input type="text" name="username" class="form-control" placeholder="Username" required>
+
                         </div>
-                        <span class="text-error">{{ form.username.errors }}</span>
+{#                        <span class="text-error">{{ form.username.errors }}</span>#}
 
                         <div class="input-group mb-3">
-                            {{ form.email }}
+{#                            {{ form.email }}#}
+                            <input type="email" name="email" class="form-control" placeholder="email" required>
                         </div>
-                        <span class="text-error">{{ form.email.errors }}</span>
+{#                        <span class="text-error">{{ form.email.errors }}</span>#}
 
                         <div class="input-group mb-4">
-                            {{ form.password1 }}
+{#                            {{ form.password1 }}#}
+                            <input type="password" name="password1" class="form-control" placeholder="Password" required>
                         </div>
-                        <span class="text-error">{{ form.password1.errors }}</span>
+{#                        <span class="text-error">{{ form.password1.errors }}</span>#}
 
                         <div class="input-group mb-4">
-                            {{ form.password2 }}
+{#                            {{ form.password2 }}#}
+                            <input type="password" name="password2" class="form-control" placeholder="Confirm password" required>
                         </div>
-                        <span class="text-error">{{ form.password2.errors }}</span>
+{#                        <span class="text-error">{{ form.password2.errors }}</span>#}
                         
                         <div class="form-group text-left">
                             <div class="checkbox checkbox-fill d-inline">
